@@ -1,7 +1,7 @@
 name: flutter_repository
-description: A new Flutter project.
-version: 0.0.1
-homepage:
+description: A Flutter Repository as dependency injection that can access via context.
+version: 1.0.0
+homepage: https://github.com/chornthorn/flutter_repository
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
