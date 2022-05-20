@@ -17,7 +17,7 @@ RepositoryProvider is a Flutter widget which provides a repository to its childr
 `` RepositoryProvider.of<T>(context) ``. It is used as a dependency injection (DI) widget so that a single
 instance of a repository can be provided to multiple widgets within a subtree. RepositoryProvider should only be used for repositories.
 
-```dart
+``` dart
   RepositoryProvider(
     create: (context) => RepositoryA(),
     child: ChildA(),
@@ -25,7 +25,7 @@ instance of a repository can be provided to multiple widgets within a subtree. R
 ```
 then from ChildA we can retrieve the Repository instance with:
 
-```dart
+``` dart
   // with extensions
   context.read<RepositoryA>();
 
@@ -36,7 +36,7 @@ then from ChildA we can retrieve the Repository instance with:
 
 MultiRepositoryProvider is a Flutter widget that merges multiple RepositoryProvider widgets into one. MultiRepositoryProvider improves the readability and eliminates the need to nest multiple RepositoryProvider. By using MultiRepositoryProvider we can go from:
 
-```dart
+``` dart
   RepositoryProvider<RepositoryA>(
     create: (context) => RepositoryA(),
     child: RepositoryProvider<RepositoryB>(
@@ -51,7 +51,7 @@ MultiRepositoryProvider is a Flutter widget that merges multiple RepositoryProvi
   
 to:
 
-```dart
+``` dart
   MultiRepositoryProvider(
     providers: [
       RepositoryProvider<RepositoryA>(
