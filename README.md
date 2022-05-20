@@ -14,7 +14,7 @@ and the Flutter guide for
 ## RepositoryProvider
 
 RepositoryProvider is a Flutter widget which provides a repository to its children via
-RepositoryProvider.of<T>(context). It is used as a dependency injection (DI) widget so that a single
+`` RepositoryProvider.of<T>(context) ``. It is used as a dependency injection (DI) widget so that a single
 instance of a repository can be provided to multiple widgets within a subtree. RepositoryProvider should only be used for repositories.
 
 ```dart
@@ -70,7 +70,7 @@ to:
 
 ## RepositoryProvider Usage
 
-We are going to take a look at how to use RepositoryProvider within the context of the flutter_weather example.
+We are going to take a look at how to use RepositoryProvider within the context of the `` flutter_weather `` example.
   
 ### weather_repository.dart
   
@@ -132,7 +132,7 @@ Since the app has an explicit dependency on the WeatherRepository we inject an i
   }
 ```
   
-Now we can access the instance of a repository via context.read and inject the repository.
+Now we can access the instance of a repository via `` context.read `` and inject the repository.
   
 ## Credit
   All code and document they are come from  `` flutter_bloc `` package.
